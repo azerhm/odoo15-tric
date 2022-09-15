@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- tric.cleaningservice inherit tree view -->
+    <record id="tric_cleaningservice_view_tree_inherit" model="ir.ui.view">
+        <field name="name">tric.cleaningservice.inherit.view.tree</field>
+        <field name="model">tric.cleaningservice</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="tric_person_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="id_cln"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- tric.cleaningservice inherit form view -->
+    <record id="tric_cleaningservice_view_form_inherit" model="ir.ui.view">
+        <field name="name">tric.cleaningservice.inherit.view.form</field>
+        <field name="model">tric.cleaningservice</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="tric_person_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="id_cln"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- tric.cleaningservice action window -->
+    <record id="tric_cleaningservice_action" model="ir.actions.act_window">
+        <field name="name">Cleaning Service</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">tric.cleaningservice</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="tric_cleaning_menu_act" 
+                name="Cleaning Service" 
+                parent="tric_pegawai_menu_categ" 
+                action="tric_cleaningservice_action" 
+                sequence="30"/>
+
+</odoo>

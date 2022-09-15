@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tric_kelompokbarang,access.tric.kelompokbarang,model_tric_kelompokbarang,,1,1,1,1
+access_tric_barang,access.tric.barang,model_tric_barang,,1,1,1,1
+access_tric_person,access.tric.person,model_tric_person,,1,1,1,1
+access_tric_kasir,access.tric.kasir,model_tric_kasir,,1,1,1,1
+access_tric_cleaningservice,access.tric.cleaningservice,model_tric_cleaningservice,,1,1,1,1
+access_tric_supplier,access.tric.supplier,model_tric_supplier,,1,1,1,1
+access_tric_penjualan,access.tric.penjualan,model_tric_penjualan,,1,1,1,1
+access_tric_detailpenjualan,access.tric.detailpenjualan,model_tric_detailpenjualan,,1,1,1,1
+access_tric_barangdatang,access.tric.barangdatang,model_tric_barangdatang,,1,1,1,1
+access_tric_penjualanreport,access.tric.penjualanreport,model_tric_penjualanreport,,1,1,1,1

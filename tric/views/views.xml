@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="tric.list">
+      <field name="name">tric list</field>
+      <field name="model">tric.tric</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="tric.action_window">
+      <field name="name">tric window</field>
+      <field name="res_model">tric.tric</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="tric.action_server">
+      <field name="name">tric server</field>
+      <field name="model_id" ref="model_tric_tric"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="tric" id="tric.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="tric.menu_1" parent="tric.menu_root"/>
+    <menuitem name="Menu 2" id="tric.menu_2" parent="tric.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="tric.menu_1_list" parent="tric.menu_1"
+              action="tric.action_window"/>
+    <menuitem name="Server to list" id="tric" parent="tric.menu_2"
+              action="tric.action_server"/>
+-->
+  </data>
+</odoo>
